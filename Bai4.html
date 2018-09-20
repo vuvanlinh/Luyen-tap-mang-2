@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let input = prompt("Enter a string : ");
+    let count = 0;
+    let regex = /[a-zA-Z]/;
+    for (let i = 0; i < input.length; i++) {
+        if (regex.test(input[i])) {
+            count++
+        }
+    }
+    document.write("There are " + count + " word(s) in input string (" + input + ")");
+
+</script>
+</body>
+</html>
